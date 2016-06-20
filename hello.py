@@ -4,8 +4,11 @@ app = Flask(__name__)
 
 @app.route('/<number>')
 def primes():
-	return primenos(number)
+	return str(primenos(number))
 
 @app.route('/')
 def hundred_primes():
 	return str(primenos(100))
+
+if __name__ == '__main__':
+	app.run(debug = True)
