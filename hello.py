@@ -2,7 +2,7 @@ from flask import Flask
 from prime import primenos
 app = Flask(__name__)
 
-@app.route('/<int:number>')
+@app.route('/<int:number>', methods=['GET'])
 def primes(number):
 	return str(primenos(number))
 
