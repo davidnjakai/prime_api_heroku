@@ -1,3 +1,4 @@
+# generate primes
 def primenos(n):
 	primelist=[2,3]
 	starter = 4
